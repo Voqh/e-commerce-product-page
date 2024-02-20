@@ -1,0 +1,107 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+}
+p{
+  font-size: 16px;
+}
+@media (max-width: 375px) {
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 5px;
+  }
+   #hamburger-menu{
+    border: none;
+  } 
+
+  #hamburger-menu img{
+   height:12px ;
+  }
+  h1{
+    margin-left: -120px;
+    margin-bottom: 10px;
+  }
+  .cart{
+    margin-right: -120px;
+  }
+  .profile img{
+    width: 22px;
+    height: auto;
+  }
+  .img-sec{
+    position: relative;
+    width: 375px;
+    height: 300px;
+    background-image: url("./images/image-product-1-thumbnail.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+  #right-arrow, #left-arrow{
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+   }
+   #right-arrow{
+    padding: 5px 8px 5px 10px;
+    right: 25px;
+    top: 150px;
+   }
+   #left-arrow{
+    padding: 5px 10px 5px 8px;
+    left: 50px;
+    top: 150px;
+   }
+  #right-arrow img, #left-arrow img{
+ width: 7px;
+  }
+  .info-sec{
+    padding: 10px 20px;
+    margin: 10px 20px;
+  }
+  .sticker{
+    font-size: 9px;
+    font-weight: 600;
+    color:hsl(26, 100%, 55%) ;
+    letter-spacing: 1.5px;
+  }
+  h2{
+    margin: 10px 0px;
+  }
+  p{
+    margin: 10px 0px;
+    color:hsl(220, 14%, 75%) ;
+  }
+  .prices{
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .new-price{
+    color: hsl(220, 13%, 13%);
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .discount{
+    font-weight: 500;
+    color: hsl(26, 100%, 55%);
+    padding: 2px 5px;
+    background-color: hsl(25, 100%, 94%);
+  }
+  .old-price{
+    font-weight: 700;
+    color: hsl(220, 14%, 75%);
+    text-decoration: line-through;
+
+  }
+}
